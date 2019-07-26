@@ -1,0 +1,20 @@
+<resources>
+	<string name="app_name">My Solr</string>
+	<string name="register_label">Register</string>
+	<string name="login">Login</string>
+	<string name="username">Username</string>
+	<string name="password">Password</string>
+	<string name="name">Name</string>
+	<string name="email">Email</string>
+	<string name="confirm_password">Confirm Password</string>
+	<string name="capacity">Capacity</string>
+	<string name="age">Age</string>
+	<string name="register">Register</string>
+	<string name="save">Save</string>
+	<string name="google">Google</string>
+	<string name="facebook">Facebook</string>
+	<string name="phone_number">Phone Number</string>
+	<string name="enter_panel_details">Enter Panel Details</string>
+	<string name="please_enter">Please enter&#160;</string>
+	<string name="unit">Unit</string>
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "472133650579",
+    "firebase_url": "https://my-solr.firebaseio.com",
+    "project_id": "my-solr",
+    "storage_bucket": "my-solr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472133650579:android:4957bd778399872a",
+        "android_client_info": {
+          "package_name": "com.whiteturtlestudio.mysolr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "472133650579-15ckrucu125n2717kp2apmtm38jmcu8n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.whiteturtlestudio.mysolr",
+            "certificate_hash": "8611642a6c9efd726ce8f5e47a319a6a79bc5650"
+          }
+        },
+        {
+          "client_id": "472133650579-2dkmit2ik570nlkaq2vne5htd528pl3k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgMHMmNcBY-n1Co3w0FFedepwsHgx8TZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "472133650579-2dkmit2ik570nlkaq2vne5htd528pl3k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

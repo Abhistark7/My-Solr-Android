@@ -1,0 +1,232 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+
+	<androidx.appcompat.widget.AppCompatImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/quarter_earth"
+		android:src="@drawable/ic_quarter_earth"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		/>
+
+	<androidx.appcompat.widget.AppCompatImageView
+		android:layout_width="120dp"
+		android:layout_height="120dp"
+		android:id="@+id/my_solar_icon"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		android:layout_marginTop="80dp"
+		android:src="@drawable/ic_solar_energy"
+		/>
+
+	<androidx.appcompat.widget.AppCompatTextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/my_solar_title"
+		android:text="@string/app_name"
+		app:layout_constraintTop_toBottomOf="@+id/my_solar_icon"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		android:fontFamily="@font/product_sans_regular"
+		android:layout_margin="18dp"
+		android:textColor="@color/black"
+		android:textSize="22sp"
+		/>
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintTop_toBottomOf="@id/my_solar_title"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintBottom_toTopOf="@id/google_card"
+		android:id="@+id/register_view">
+
+	<androidx.appcompat.widget.AppCompatTextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/register_button"
+		android:text="@string/register_label"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		android:padding="8dp"
+		android:textColor="@color/blue"
+		android:textSize="18sp"
+		app:fontFamily="@font/product_sans_regular"
+		/>
+
+	<androidx.appcompat.widget.AppCompatImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/right_arrow"
+		android:src="@drawable/ic_right_arrow_blue"
+		app:layout_constraintStart_toEndOf="@id/register_button"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintBottom_toBottomOf="parent"
+		/>
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+	<androidx.cardview.widget.CardView
+		android:id="@+id/google_card"
+		app:layout_constraintBottom_toTopOf="@id/enter_username"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toStartOf="@id/facebook_card"
+		android:layout_marginStart="16sp"
+		android:visibility="gone"
+		app:cardCornerRadius="5dp"
+		app:cardElevation="5dp"
+		android:layout_marginBottom="16sp"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content">
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<androidx.appcompat.widget.AppCompatImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				app:layout_constraintTop_toTopOf="parent"
+				android:id="@+id/google_icon"
+				android:paddingStart="16sp"
+				android:paddingEnd="16sp"
+				android:paddingTop="12dp"
+				android:paddingBottom="12dp"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				android:src="@drawable/ic_google_icon"
+				/>
+
+			<androidx.appcompat.widget.AppCompatTextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				app:layout_constraintTop_toTopOf="parent"
+				app:layout_constraintBottom_toBottomOf="parent"
+				android:text="@string/google"
+				android:fontFamily="@font/product_sans_regular"
+				android:textColor="@color/black"
+				android:textSize="18sp"
+				app:layout_constraintStart_toEndOf="@id/google_icon"
+				/>
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+	</androidx.cardview.widget.CardView>
+
+
+	<androidx.cardview.widget.CardView
+		android:id="@+id/facebook_card"
+		app:layout_constraintBottom_toTopOf="@id/enter_username"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@id/google_card"
+		android:layout_marginStart="16sp"
+		app:cardCornerRadius="5dp"
+		android:visibility="gone"
+		app:cardElevation="5dp"
+		android:layout_marginBottom="16dp"
+		android:layout_marginEnd="16dp"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content">
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<androidx.appcompat.widget.AppCompatImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				app:layout_constraintTop_toTopOf="parent"
+				android:id="@+id/facebook_icon"
+				android:paddingStart="16sp"
+				android:paddingEnd="16sp"
+				android:paddingTop="12dp"
+				android:paddingBottom="12dp"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				android:src="@drawable/ic_facebook_icon"
+				/>
+
+			<androidx.appcompat.widget.AppCompatTextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				app:layout_constraintTop_toTopOf="parent"
+				app:layout_constraintBottom_toBottomOf="parent"
+				android:text="@string/facebook"
+				android:fontFamily="@font/product_sans_regular"
+				android:textColor="@color/black"
+				android:textSize="18sp"
+				app:layout_constraintStart_toEndOf="@id/facebook_icon"
+				/>
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+	</androidx.cardview.widget.CardView>
+	<include
+		android:id="@+id/enter_username"
+		layout="@layout/view_edit_text"
+		app:layout_constraintStart_toStartOf="parent"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:layout_constraintBottom_toTopOf="@id/enter_password"
+		app:layout_constraintEnd_toEndOf="parent"
+		android:layout_marginStart="16sp"
+		android:layout_marginEnd="16sp"
+		android:layout_marginBottom="16sp"
+		/>
+
+	<include
+		android:id="@+id/enter_password"
+		layout="@layout/view_edit_text"
+		app:layout_constraintStart_toStartOf="parent"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:layout_constraintBottom_toTopOf="@id/login_button"
+		app:layout_constraintEnd_toEndOf="parent"
+		android:layout_marginStart="16sp"
+		android:layout_marginEnd="16sp"
+		android:layout_marginBottom="16sp"
+		/>
+
+	<ProgressBar
+		android:layout_width="wrap_content"
+		android:layout_height="0dp"
+		android:id="@+id/progress_circular"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="@id/login_button"
+		android:theme="?android:attr/android:progressBarStyleHorizontal"
+		app:layout_constraintBottom_toBottomOf="@id/login_button"
+		android:elevation="10dp"
+		android:visibility="gone"
+		android:padding="14dp"
+		/>
+
+	<androidx.appcompat.widget.AppCompatButton
+		android:layout_width="0dp"
+		android:layout_height="60dp"
+		android:layout_margin="16sp"
+		android:id="@+id/login_button"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		android:background="@color/black"
+		android:textColor="@color/white"
+		android:text="@string/login"
+		android:textAllCaps="false"
+		android:textSize="22sp"
+		android:fontFamily="@font/product_sans_regular"
+		/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
